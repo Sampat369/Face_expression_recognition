@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import time
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 
@@ -24,7 +25,7 @@ if not cap.isOpened():
     print("Error: Could not open webcam")
     exit()
 
-print("Starting video capture. Press shift + q to quit.")
+print("Starting video capture. Press ctrl+c or q to quit.")
 time.sleep(2)  # Allow camera to warm up
 while True:
     ret, frame = cap.read()
@@ -65,4 +66,5 @@ cv2.destroyAllWindows()
 print("Program ended")
 #To install again all modules type: pip install -r requirements.txt
 #TO run the script type: python emotion_recognition.py
+
 
