@@ -207,10 +207,10 @@ plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
 plt.legend(loc='lower right')
 plt.show()
 
-model.save("model.keras")
+model.save("model.h5")
 
 from google.colab import files
-files.download("model.keras")
+files.download("model.h5")
 
 
 
