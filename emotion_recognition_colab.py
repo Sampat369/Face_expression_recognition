@@ -24,7 +24,7 @@ from keras.optimizers import Adam,SGD,RMSprop
 picture_size = 48
 import kagglehub
 
-# Download latest version
+# Download latest version from kaggle
 folder_path = kagglehub.dataset_download("jonathanoheix/face-expression-recognition-dataset")
 
 pip install kaggle
